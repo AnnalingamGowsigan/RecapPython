@@ -9,18 +9,18 @@ print(type(rating))
 print(len(msg))
 print(msg[1])
 
-# concatinate
+# concatenate
 first = "Annalingam"
 last = "Gowsigan"
-full = first + " "+last
+full = first + " " + last
 print(f"My fullname is {full}")
 print("numerical representation of A is " + str(ord("A")))
 
 # conditional statements
 num = 5
-if (num == 5):
+if num == 5:
     print("It is equal to 5")
-elif (num == 3):
+elif num == 3:
     print("It is equal to 3")
 else:
     print("not")
