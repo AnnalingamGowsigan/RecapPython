@@ -47,5 +47,44 @@ items = [
 items.sort(key=lambda item: item[1])
 print(items)
 
+# map function
 x = list(map(lambda item: item[1], items))
 print(x)
+print([item[1] for item in items])
+
+
+# filter function
+y = list(filter(lambda item: item[1] < 10, items))
+print(y)
+print([item for item in items if item[1] < 10])
+# comprehensions
+# [expression for item in items]
+
+# zip function
+list1 = [1, 2, 3]
+list2 = [100, 101, 103]
+print(list(zip("abc", list1, list2)))
+
+
+# stacks
+# queues
+# tuples
+# swaping variables
+# array
+# set
+# dictionary
+# unpack and packing
+
+
+sentenion = "this is the common interview question"
+
+temp = {}
+for character in sentenion:
+    if character in temp:
+        temp[character] = temp[character] + 1
+        continue
+    temp[character] = 1
+print(temp)
+
+string = max(temp.values())
+print(list(filter(lambda z: temp[z] == string, temp))[0])
